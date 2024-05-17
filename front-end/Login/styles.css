@@ -43,3 +43,10 @@ body {
     font-size: 24px;
 }
 
+#hills {
+    width: 200px;
+    grid-area: footer;
+    background-image: url(../images/montañas.png);
+    background-position: center;
+    background-size: cover;
+}
