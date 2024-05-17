@@ -1,0 +1,136 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    background-image: url(../images/montañas3.png);
+    background-size: cover;
+    
+    
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr;
+
+    grid-template-areas: 
+    "header"
+    "menu"
+    "content";
+}
+
+
+/* Header title */
+
+#header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(32, 106, 1, 1);
+    margin: 0%;
+}
+
+#headerTitle {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+.iconHeader1 {
+    width: 80px;
+}
+
+.iconHeader2 {
+    width: 60px;
+    padding: 0px 40px;
+}
+
+
+/* Menu */
+
+#menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconMenu{
+    padding: 10px;
+}
+
+.iconText{ 
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: rgba(80, 147, 51, 0.553);
+    color: white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 7px;
+}
+
+.right {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+    gap: 25px;
+    padding: 7px;
+}
+
+.gradesText{
+    margin-top: -35px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(32, 106, 1, 1);
+}
+
+/* Content Table */
+
+#content {
+    grid-area: content;
+    
+    margin: auto;
+}
+
+#table {
+    
+    padding: 20px; 
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(213, 176, 75, 0.452)
+}
+
+.contentCharts {
+    width: 33%;
+    font-size: 16px;
+    padding: 10px; 
+    justify-content: center;
+}
+
+.contentTitle {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.separator {
+    border-right: 2px solid black;
+}
+
