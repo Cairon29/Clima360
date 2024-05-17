@@ -3,7 +3,8 @@
 }
 body {
     height: 100%;
-    background-color: rgba(181, 208, 161, 1);
+    background-image: url(../images/montañas3.png);
+    background-size: cover;
     
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
@@ -15,31 +16,81 @@ body {
     " footer    footer      footer";
 }
 
+
+/* Content */
+
 #contenido {
     padding: 50px;
     grid-area: content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    text-align: center;
 }
+
+/* column 1 */
+
+#logo1{
+    border-radius: 80px;
+}
+
+
+/* column 2 */
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: space-between;
+}
+
 #titulo1 {
     color: rgba(32, 106, 1, 1);
     font-size: 48px;
 }
 
-.ingresoDatos {
+
+/* Inputs */
+
+.inputBox{
     display: flex;
-    width: 30px;
-    padding: 5px;
-    
-    color: rgba(32, 106, 1, 1);
-    font-size: 24px;
-    background-color: rgba(181, 208, 161, 1);
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 2px rgba(32, 106, 1, 1);
 }
 
-.ingresoDatos::placeholder{
-    color: rgba(32, 106, 1, 1);
+.ingresoDatos {
     font-size: 24px;
+    color: rgba(32, 106, 1, 1);
+    background-color: transparent;
+    border-color: transparent;
+    padding: 15px 40px;
 }
 
+.ingresoDatos::placeholder {
+    color: rgba(32, 106, 1, 1);
+    border-color: transparent;
+}
+.ingresoDatos:hover{
+    background-color: rgba(32, 106, 1, 0.308);
+}
+
+.ingresoDatos:focus {
+    outline: none;
+}
+
+
+/* button */
+
+#register {
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 15px;
+    background-color:rgba(32, 106, 1, 1);
+    border-style: none;
+}
+
+#register:hover {
+    background-color: rgba(32, 106, 1, 0.308);
+}

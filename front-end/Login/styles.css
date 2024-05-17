@@ -1,13 +1,16 @@
+/* General settings */
+
 *{
     font-family: sans-serif;
 }
 body {
     height: 100%;
-    background-color: rgba(181, 208, 161, 1);
+    background-image: url(../images/montañas3.png);
+    background-size: cover;
     
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
-    grid-template-rows: 50px auto 1fr;
+    grid-template-rows: 50px ;
 
     grid-template-areas:
     ".          .           ."
@@ -15,38 +18,81 @@ body {
     " footer    footer      footer";
 }
 
+/* Content */
+
 #contenido {
     padding: 50px;
     grid-area: content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    text-align: center;
 }
+
+/* column 1 */
+
+#logo1{
+    border-radius: 80px;
+}
+
+
+/* column 2 */
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: space-between;
+}
+
 #titulo1 {
     color: rgba(32, 106, 1, 1);
     font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+/* Inputs */
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 2px rgba(32, 106, 1, 1);
 }
 
 .ingresoDatos {
-    display: flex;
-    width: 30px;
-    padding: 5px;
-    
-    color: rgba(32, 106, 1, 1);
     font-size: 24px;
-    background-color: rgba(181, 208, 161, 1);
+    color: rgba(32, 106, 1, 1);
+    background-color: transparent;
+    border-color: transparent;
+    padding: 15px 40px;
 }
 
-.ingresoDatos::placeholder{
+.ingresoDatos::placeholder {
     color: rgba(32, 106, 1, 1);
-    font-size: 24px;
+    border-color: transparent;
+}
+.ingresoDatos:hover{
+    background-color: rgba(32, 106, 1, 0.308);
 }
 
-#hills {
-    width: 200px;
-    grid-area: footer;
-    background-image: url(../images/montañas.png);
-    background-position: center;
-    background-size: cover;
+.ingresoDatos:focus {
+    outline: none;
+}
+
+
+/* button */
+
+#logIn {
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 15px;
+    background-color:rgba(32, 106, 1, 1);
+    border-style: none;
+}
+
+#logIn:hover {
+    background-color: rgba(32, 106, 1, 0.308);
 }
